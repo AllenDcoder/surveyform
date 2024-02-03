@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles2.css">
+  <title>Survey form </title>
+  </head>
+  <body>
+    <div class="container">
+     
+      <header>
+        <h1 id="title"> Simple Survey Form </h1>
+        <p id="description" class="description text_center"> A survey to know your interests in programming languages
+      </p>
+      </header>
+
+      <!-- The Form -->
+
+      <form id="survey_form">
+        <div class="form_group">
+          <label for="name" id="name"> Name</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="form_control" 
+            placeholder="Enter Your name" 
+            required />
+        </div>
+
+        <div class="form_group">
+          <label for="email" id="email"> Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            class="form_control" 
+            placeholder="Enter Your email" 
+            required />
+        </div>
+
+        <div class="form_group">
+          <label for="number" id="name"> Age</label>
+          <input 
+            type="number" 
+            name="age" 
+            min="10"
+            max="99" 
+            id="number" 
+            class="form_control" 
+            placeholder="Age" 
+            required />
+        </div>
+        
+        <div class="form_group">
+         <p>Which option best describe your current role?</p>
+         <select name="role" id="dropdown" class="form_group">
+          <option value="student">Student</option>
+          <option value="learner">learner</option>
+          <option value="housewife">housewife</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option> 
+         </select>
+        </div>
+
+        <!-- Radio Buttons and Checkboxes -->
+        <div class="form_group">
+          <p>Would you recommend this survey to a friend?</p>
+          <label>
+            <input 
+            type="radio" 
+            name="user-recommended"
+            value="diffrently"
+            class="input_radio" 
+            checked /> 
+            Definitely 
+          </label>
+          <label>
+            <input 
+            type="radio" 
+            name="user-recommended"
+            value="maybe"
+            class="input_radio" 
+            /> 
+            Maybe 
+          </label>
+          <label>
+            <input 
+            type="radio" 
+            name="user-recommended"
+            value="not-sure"
+            class="input_radio" 
+            /> 
+            Not Sure 
+          </label>
+        </div>
+
+        <div class="form_group">
+          <p>What is your favorite coding language?</p>
+
+          <select name="mostLike" id="most-like" class="form_control">
+            <option value="javascript">Javascript</option>
+            <option value="react">react.js</option>
+            <option value="java">Java</option>
+            <option value="c++>">C++</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
+
+        <div class="form_group">
+          <p>What would you like to create?</p>
+
+          <label>
+            <input 
+            type="Checkbox" 
+            name="prefer"
+            value="frontend-project"
+            class="input_checkbox" 
+            />
+            Frontend-Project
+          </label>
+          <label>
+            <input 
+            type="Checkbox" 
+            name="prefer"
+            value="backend-project"
+            class="input_checkbox" 
+            />
+            Backend-Project
+          </label>
+          <label>
+            <input 
+            type="Checkbox" 
+            name="prefer"
+            value="fullstack-project"
+            class="input_checkbox" 
+            />
+            Fullstack-Project
+          </label>
+          <label>
+            <input 
+            type="Checkbox" 
+            name="prefer"
+            value="games"
+            class="input_checkbox" 
+            />
+            Games
+          </label>
+          <label>
+            <input 
+            type="Checkbox" 
+            name="prefer"
+            value="app"
+            class="input_checkbox" 
+            />
+            App
+          </label>
+        </div>  
+
+        <!-- Add textarea -->
+        <div class="form_group">
+          <p>Any comments or suggestions?</p>
+          <textarea 
+          name="comment"
+          class="input_textarea"
+          id="comment"
+          placeholder="Do you have any comment?..">
+          </textarea>
+        </div>
+
+        <!-- Add a Submit button -->
+        <div class="form_group">
+          <button type="submit" class="submit_btn">Submit</button>
+        </div>
+      </form>
+    </div>
+    </body>
+  </html>
